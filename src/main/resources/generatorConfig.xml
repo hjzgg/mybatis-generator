@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- 配置文件路径 -->
+    <properties resource="config.properties"/>
+
+    <context id="mysqlTables" targetRuntime="MyBatis3">
+        <!-- 指定生成的java文件的编码,没有直接生成到项目时中文可能会乱码 -->
+        <property name="javaFileEncoding" value="UTF-8"/>
+
+        <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+            <property name="searchString" value="Example$"/>
+            <property name="replaceString" value="Params"/>
+        </plugin>
+
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+
+        <!--<plugin type="com.beiquan.com.beiquan.vas.RenameMapperPlugin">
+        	<property name="newPostfix" value="Dao" />
+        </plugin>-->
+
+        <!-- 生成文件的注释，type里写的是你的实现类的类全路径 -->
+        <commentGenerator type="com.hjzgg.mybatis.MyCommentGenerator">
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true"/>
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+
+        <!--数据库连接信息 -->
+        <jdbcConnection driverClass="${jdbc.driver}"
+                        connectionURL="${jdbc.url}"
+                        userId="${jdbc.username}"
+                        password="${jdbc.password}">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!-- 生成Model类存放位置 -->
+        <javaModelGenerator targetPackage="${model.package}" targetProject="${target.project}">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- 生成映射文件存放位置 -->
+        <sqlMapGenerator targetPackage="${mapper.package}" targetProject="${target.project}">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- 生成Dao类存放位置 -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="${service.package}" targetProject="${target.project}">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!-- 生成对应表及类名 -->
+        <!--不生成帮助类（Exmaples） -->
+        <table tableName="light_user"
+               enableInsert="true"
+               enableSelectByExample="false"
+               enableDeleteByExample="false"
+               enableCountByExample="false"
+               enableUpdateByExample="false">
+            <generatedKey column="user_id" sqlStatement="MySql" identity="true"/>
+        </table>
+    </context>
+</generatorConfiguration>
