@@ -24,12 +24,12 @@
         <snapshotRepository>
             <id>nexus</id>
             <name>Nexus Snapshot</name>
-            <url>http://nexus.bqmart.cn/nexus/content/groups/public/</url>
+            <url>http://nexus.xxx.cn/nexus/content/groups/public/</url>
         </snapshotRepository>
         <site>
             <id>nexus</id>
             <name>Nexus Sites</name>
-            <url>dav:http://nexus.bqmart.cn/nexus/content/groups/public/</url>
+            <url>dav:http://nexus.xxx.cn/nexus/content/groups/public/</url>
         </site>
     </distributionManagement>
 
