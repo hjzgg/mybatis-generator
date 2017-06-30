@@ -18,28 +18,15 @@ import java.util.List;
  * Created by wyg on 2017/5/15.
  */
 public class StartUp {
+    private static final String FILE_PATH = "/generatorConfig.xml";
 
-    public static void main(String[] args) throws URISyntaxException {
-        try {
-            List<String> warnings = new ArrayList<String>();
-            boolean overwrite = true;
-            //直接获取generatorConfig.xml的文件路径 根据具体情况查看
-            File configFile = new File("/Users/apple/工作空间/workspace/light/bq-codegenerate/src/main/resources/generatorConfig.xml");
-            ConfigurationParser cp = new ConfigurationParser(warnings);
-            Configuration config = cp.parseConfiguration(configFile);
-            DefaultShellCallback callback = new DefaultShellCallback(overwrite);
-            MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
-            myBatisGenerator.generate(null);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (InvalidConfigurationException e) {
-            e.printStackTrace();
-        } catch (XMLParserException e) {
-            e.printStackTrace();
-        }
+    @Test
+    public void test() throws Exception {
+        List<String> warnings = new ArrayList<>();
+        ConfigurationParser cp = new ConfigurationParser(warnings);
+        Configuration config = cp.parseConfiguration(Surrogate.Generator.class.getResourceAsStream(FILE_PATH));
+        DefaultShellCallback callback = new DefaultShellCallback(true);
+        MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
+        myBatisGenerator.generate(null);
     }
 }
