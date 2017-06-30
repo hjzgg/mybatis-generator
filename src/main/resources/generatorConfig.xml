@@ -18,7 +18,7 @@
 
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
 
-        <!--<plugin type="com.beiquan.com.beiquan.vas.RenameMapperPlugin">
+        <!--<plugin type="com.xxx.RenameMapperPlugin">
         	<property name="newPostfix" value="Dao" />
         </plugin>-->
 
