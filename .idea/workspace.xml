@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b4e6107-265e-4b19-81a7-4615cdc84fdf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generator.iml" afterPath="$PROJECT_DIR$/generator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hjzgg/mybatis/StartUp.java" afterPath="$PROJECT_DIR$/src/main/java/com/hjzgg/mybatis/StartUp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,8 +39,8 @@
       <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="60" column="33" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="60" selection-end-column="33" />
+            <state relative-caret-position="132">
+              <caret line="58" column="8" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -67,7 +63,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#944#945#0" expanded="false" />
+                <element signature="e#971#972#0" expanded="false" />
+                <element signature="e#1042#1043#0" expanded="false" />
+                <element signature="e#1092#1093#0" expanded="false" />
+                <element signature="e#3046#3063#0" expanded="false" />
+                <element signature="e#8803#8804#0" expanded="false" />
+                <element signature="e#8830#8831#0" expanded="false" />
+                <element signature="e#8904#8905#0" expanded="false" />
+                <element signature="e#8951#8952#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -838,12 +845,12 @@
       <option name="presentableId" value="Default" />
       <updated>1495727473897</updated>
       <workItem from="1495727480067" duration="3935000" />
-      <workItem from="1499055371579" duration="326000" />
+      <workItem from="1499055371579" duration="421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4261000" />
+    <option name="totallyTimeSpent" value="4356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="728" extended-state="6" />
@@ -970,7 +977,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#971#972#0" expanded="false" />
+            <element signature="e#1042#1043#0" expanded="false" />
+            <element signature="e#1092#1093#0" expanded="false" />
+            <element signature="e#3046#3063#0" expanded="false" />
+            <element signature="e#8803#8804#0" expanded="false" />
+            <element signature="e#8830#8831#0" expanded="false" />
+            <element signature="e#8904#8905#0" expanded="false" />
+            <element signature="e#8951#8952#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,8 +1028,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="60" column="33" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="60" selection-end-column="33" />
+        <state relative-caret-position="132">
+          <caret line="58" column="8" lean-forward="false" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="24" />
           <folding />
         </state>
       </provider>
