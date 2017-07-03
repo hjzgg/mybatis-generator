@@ -24,12 +24,12 @@
         <snapshotRepository>
             <id>nexus</id>
             <name>Nexus Snapshot</name>
-            <url>http://nexus.bqmart.cn/nexus/content/groups/public/</url>
+            <url>http://nexus.xxx.cn/nexus/content/groups/public/</url>
         </snapshotRepository>
         <site>
             <id>nexus</id>
             <name>Nexus Sites</name>
-            <url>dav:http://nexus.bqmart.cn/nexus/content/groups/public/</url>
+            <url>dav:http://nexus.xxx.cn/nexus/content/groups/public/</url>
         </site>
     </distributionManagement>
 
@@ -43,6 +43,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.24</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
         </dependency>
     </dependencies>
 

@@ -18,7 +18,7 @@
 
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
 
-        <!--<plugin type="com.beiquan.com.beiquan.vas.RenameMapperPlugin">
+        <!--<plugin type="com.xxx.RenameMapperPlugin">
         	<property name="newPostfix" value="Dao" />
         </plugin>-->
 
@@ -55,6 +55,10 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="${service.package}" targetProject="${target.project}">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
+
+       <!-- <javaClientGenerator type="com.hjzgg.mybatis.self.JavaMapperGenerator" targetPackage="${service.package}" targetProject="${target.project}">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>-->
 
         <!-- 生成对应表及类名 -->
         <!--不生成帮助类（Exmaples） -->
